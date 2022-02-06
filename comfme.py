@@ -6,7 +6,6 @@ from requests import get
 def _help():
     print("usage : python3 comfme.py <url>")
 
-
 def download(url):
     response = get(url, stream=True)
     file_name = url.split("/")[-1]
